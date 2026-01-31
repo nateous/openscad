@@ -2,17 +2,17 @@
 // This script creates a simplified 3D model of the White House
 // including the main residence, porticos, and wings
 
-// Main parameters
-main_building_width = 52;
-main_building_depth = 26;
-main_building_height = 21;
+// Main parameters (all dimensions in arbitrary units, approximately meters)
+main_building_width = 52;  // Width of main building
+main_building_depth = 26;  // Depth of main building
+main_building_height = 21; // Height of main building
 
-wing_width = 20;
-wing_depth = 15;
-wing_height = 15;
+wing_width = 20;   // Width of each wing
+wing_depth = 15;   // Depth of each wing
+wing_height = 15;  // Height of each wing
 
-column_radius = 0.8;
-column_height = 12;
+column_radius = 0.8;  // Radius of columns
+column_height = 12;   // Height of columns
 
 // Color definitions
 building_color = [0.95, 0.95, 0.90]; // Off-white

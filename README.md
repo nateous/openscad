@@ -1,5 +1,5 @@
 # openscad
-just playing around with open s cad
+just playing around with OpenSCAD
 
 ## White House Model
 
