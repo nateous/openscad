@@ -33,11 +33,11 @@ module white_house() {
         south_portico();
     
     // East Wing
-    translate([main_building_width/2 + wing_width/2 + 2, 0, 0])
+    translate([main_building_width/2 + wing_width/2, 0, 0])
         wing();
     
     // West Wing
-    translate([-main_building_width/2 - wing_width/2 - 2, 0, 0])
+    translate([-main_building_width/2 - wing_width/2, 0, 0])
         wing();
 }
 
@@ -113,7 +113,7 @@ module south_portico() {
     }
     
     // Columns in a semi-circle
-    num_columns = 8;
+    num_columns = 11;
     for (i = [0:num_columns-1]) {
         angle = 180 * i / (num_columns - 1) - 90;
         translate([
@@ -152,11 +152,11 @@ module column() {
             cylinder(h=1, r1=column_radius*1.3, r2=column_radius, center=true, $fn=30);
         
         // Column shaft
-        translate([0, 0, column_height/2 + 1])
+        translate([0, 0, column_height/2])
             cylinder(h=column_height-2, r=column_radius, center=true, $fn=30);
         
         // Column capital
-        translate([0, 0, column_height - 0.5])
+        translate([0, 0, column_height - 1.5])
             cylinder(h=1, r1=column_radius, r2=column_radius*1.3, center=true, $fn=30);
     }
 }
